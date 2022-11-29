@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+  
+
+:root {
+    --btn-bg: #4A4A48;
+}
+
+/* start screen html */
+.start-image {
+    max-width: 40em;
+    max-height: 40em;
+}
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-transform: uppercase;
+}
+
+.start-btn {
+    background-color: black;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.start-btn:hover {
+    background-color:#4A4A48;
+    transition: 0.2s ease-in;
+}
+
+/* game.html */
+
+.main-parent-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+  
+.main-container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px;
+    margin-bottom: 2em;
+}
+  
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin-top: 20px;
+}
+  
+.option-btn {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: black;
+    outline: none;
+}
+  
+.option-btn:hover {
+    background-color: rgb(199, 199, 199);
+    transition: 0.2s ease-in;
+    cursor:pointer;
+}
