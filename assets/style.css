@@ -5,7 +5,7 @@
   
 
 :root {
-    --btn-bg: #4A4A48;
+    --brown-gray: #4A4A48;
 }
 
 /* start screen html */
@@ -40,29 +40,39 @@
 
 /* game.html */
 
+.game-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+
 .main-parent-container {
+    position: relative;
     padding: 0;
     margin: 0;
+    /* height: 100vh;
+    width: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke;
+    background-color: white;
 }
   
 .main-container {
+    position: absolute;
     width: 800px;
     max-width: 80%;
-    background-color: whitesmoke;
+    background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 5px 1px;
-    margin-bottom: 2em;
+    box-shadow: 0 0 1px 1px;
+    margin-bottom: -20em;
 }
   
 .options-grid {
@@ -86,3 +96,4 @@
     transition: 0.2s ease-in;
     cursor:pointer;
 }
+
